@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&family=Nunito+Sans&family=Poppins:ital,wght@0,400;0,700;1,100&family=Roboto+Slab:wght@700&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+font-family: 'Roboto Slab', serif;
+font-family: 'Dancing Script', cursive;
+*/
+/*****Estilos Generales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 25px 0;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.title{
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+}
+
+.quote{
+  min-height: 50vh;
+  background-color: white;
+
+  display: grid;
+  place-content: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  color: #242222;
+  text-align: center;
+}
+
+.quote-reference{
+  color: #ff0055;
+  margin-top: 1rem;
+}
+
+
+
+/*****Cortina*****/
+.cortina{
+  background-image: linear-gradient(-40deg, #fe1a94af,#1bf6dd, #ac5dfb, #003ad9);
+
+/*   background-color:#27e98e ; */
+    display: grid;
+    place-content: center;
+    z-index: 10;
+}
+
+.logo{
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  color: white;
+  letter-spacing: 15px;
+  text-shadow: 0 0 10px #2a05fae1;
+}
+
+
+
+/*****Header*****/
+.header__main{
+  background-image: linear-gradient(40deg, #fe1a9469,#1bf6dd9d, #ac5dfbbe, #003ad9ab),url(../img/cat-pc.jpg);;
+
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: grid;
+  place-content: center;
+}
+
+.header__texts{
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: 0px 0px 5px #000000ad;
+}
+
+.dinamic{
+  color: #3bffef;
+}
+
+
+
+/*****BTN HOME****/
+.btn-home {
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+}
+
+.btn-home a {
+  background-color: #0000005d;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-home a:hover {
+  background-color: #1c1c1dcc;
+  transition: 0.3s;
+}
+
+
+
+/****Proyectos****/
+
+
+/*----Lineo----*/
+
+
+.project__lineo--identidadVirtual{
+  text-align: center;
+  background-image: linear-gradient( #FEF5A8,#FCB7B2,#FB8CCE,#F067C7,#E841C4);
+}
+.project__title{
+  color: #e45af7;
+  margin-bottom: .5rem;
+}
+
+.identidad--virtual{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(10,150px);
+  grid-template-areas:
+   "img1 img1 img1 img1 img2 img2"
+   "img1 img1 img1 img1 img2 img2"
+   "img3 img3 img4 img4 img2 img2"
+   "img3 img3 img4 img4 img2 img2"
+   "img5 img5 img5 img5 img2 img2"
+   "img5 img5 img5 img5 img2 img2"
+   "img7 img7 img6 img6 img6 img6"
+   "img7 img7 img6 img6 img6 img6"
+   "img8 img8 img8 img9 img9 img9"
+   "img8 img8 img8 img9 img9 img9"
+ ;
+}
+.images{
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+ 
+  object-position: top center;
+  border:3px solid white;
+  transition: .3s;
+}
+
+.images:hover{
+/*   filter: blur(0px) !important; */
+  transition: .3s;
+  cursor: pointer;
+}
+
+.identidad--virtual :nth-child(1){
+  grid-area: img1;
+}
+
+.identidad--virtual :nth-child(3){
+  grid-area: img3;
+}
+.identidad--virtual :nth-child(2){
+  grid-area: img2;
+  overflow: scroll;
+}
+.identidad--virtual :nth-child(2)::-webkit-scrollbar{
+  width: 8px;
+}
+
+.identidad--virtual :nth-child(2)::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(40deg, #fe1a9469, #ac5dfbbe);
+  border-radius: 30px;
+}
+
+.identidad--virtual :nth-child(2)::-webkit-scrollbar-track{
+  background-color: white;
+}
+
+.large--img{
+  height: 1500px;
+  width: 100%;
+}
+
+.identidad--virtual :nth-child(4){
+  grid-area: img4;
+}
+.identidad--virtual :nth-child(5){
+  grid-area: img5;
+}
+.identidad--virtual :nth-child(6){
+  grid-area: img6;
+}
+.identidad--virtual :nth-child(7){
+  grid-area: img7;
+}
+.identidad--virtual :nth-child(8){
+  grid-area: img8;
+}
+.identidad--virtual :nth-child(9){
+  grid-area: img9;
+}
+
+.btn-blur {
+  font-family: "Poppins";
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #ee1895f8;
+  color: white;
+  width: max-content;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-blur:hover {
+  background-color: #fa477df5;
+  transition: 0.2s;
+}
+
+.marks{
+  color: #ff0055;;
+  font-weight: bold;
+ 
+}
+
+
+
+
+
+
+.project__lineo--infografias{
+  text-align: center;
+  background-image: linear-gradient(#E841C4,#8D86DE,#31CAF6,#1CD2E0,#07DAC7);
+}
+
+.infografias{
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,550px);
+  gap: 10px;
+  grid-template-areas:
+  "img1 img1 img2 img3"
+  "img4 img5 img6 img3"
+  ;
+}
+
+.infografias__img{
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  object-fit: cover;
+  object-position: top center;
+  border:3px solid white;
+  transition: .3s;
+}
+
+.infografias__img:hover{
+  filter: blur(0px) !important;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.infografias :nth-child(1){
+  grid-area: img1;
+}
+
+.infografias :nth-child(2){
+  grid-area: img2;
+}
+
+.infografias :nth-child(3){
+  grid-area: img3;
+}
+
+.infografias :nth-child(4){
+  grid-area: img4;
+}
+
+.infografias :nth-child(5){
+  grid-area: img5;
+}
+
+.infografias :nth-child(6){
+  grid-area: img6;
+}
+
